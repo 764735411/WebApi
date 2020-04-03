@@ -6,6 +6,9 @@ using PetaPoco;
 
 namespace CustomWebApi.Model
 {
+    /// <summary>
+    /// 1232131231
+    /// </summary>
     [TableName("Custom")]
     [PrimaryKey("custom_id", AutoIncrement = true)]
     public class Custom
