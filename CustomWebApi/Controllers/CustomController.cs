@@ -96,7 +96,7 @@ namespace CustomWebApi.Controllers
         /// <returns></returns>
         [HttpGet("select/v1/query")]
         public async Task<IActionResult> SelectByQuery([FromBody] CustomQuery customQuery)
-        {
+        {                          
             List<Custom> customList  = await _customService.SelectCustomByElement(customQuery);
             return new JsonResult(customList);
         }
